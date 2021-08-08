@@ -9,6 +9,7 @@ public class SpeechToText{
     public static void main(String[] args) throws Exception {
 
         // [START auth_cloud_explicit]
+        //Add path of Service Account
         GoogleCredentials credentials =
                 GoogleCredentials.fromStream(new FileInputStream("F:\\Environment\\api-project-204667169246-bab65b95321a.json"))
                         .createScoped(Lists.newArrayList("https://www.googleapis.com/auth/cloud-platform"));
